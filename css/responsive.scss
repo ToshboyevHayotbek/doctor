@@ -1,0 +1,22 @@
+@media only screen and (max-width: 1200px){
+    .header{
+        width: 100%;
+        .navigation{
+            width: 100%;
+            .logo{
+                i{
+                    font-size: 1.8rem;
+                }
+                h3{
+                    font-size: 1.4rem;
+                }
+                .nav{
+                    width: 100%;
+                    a{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

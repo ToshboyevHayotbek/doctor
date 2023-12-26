@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Karla:ital,wght@1,800&family=Lato:ital,wght@1,900&family=Libre+Baskerville:ital@1&family=Rampart+One&family=Roboto+Slab:wght@900&family=Rowdies:wght@300&family=Shantell+Sans:ital,wght@1,800&family=Ubuntu:wght@300;700&display=swap');
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+html{
+    line-height: 1.4;
+}
+body{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    margin-bottom: 3rem;
+    .navigation{
+        width: 100%;
+        padding: 2rem 0;
+        .nav__bar{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                width: 100%;
+                color: #13C5DD;
+                
+                i{
+                    position: absolute;
+                    font-size: 2.5rem;
+                    align-items: center;
+                }
+                h3{
+                    margin-left: 55px;
+                    font-family: Ubuntu;
+                    font-size: 2rem;
+                }
+            }
+            .nav{
+                width: 100%;
+                a{
+                    text-decoration: none;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    font-family: Karla;
+                    color: black;
+                    font-size: 1.2rem;
+                    &:hover{
+                        color: #13C5DD;
+                        transition: 0.5s;
+                    }
+                }
+            }
+
+        }
+    }
+    .hero__bg{
+        width: 100%;
+        padding: 3rem 0;
+        height: 30rem;
+        background-image: url(/img/hero.jpg);
+        background-position: top;
+        .hero__content{
+            width: 100%;
+            .hero__item{
+                h3{
+                    font-size: 1.2rem;
+                    color: #13C5DD;
+                    font-family: Ubuntu;
+                }
+                h1{
+                    font-size: 3.8rem;
+                    font-family: Roboto Slab;
+                    color: white;
+                    margin-bottom: 3rem;
+                }
+                button{
+                    width: 200px;
+                    padding: 1rem 1rem;
+                    border-radius: 80px;
+                    border: 1px solid white;
+                    font-size: 1.1rem;
+                    background-color: white;
+                    cursor: pointer;
+                }
+                .appo{
+                    background: repeat;
+                    color: white;
+                    margin-left: 1rem;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                        border: 1px solid white;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }   
+    }
+}
+.about{
+    width: 100%;
+    .about__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        .about__img{
+            width: 100%;
+            height: 100%;
+            img{
+                border-radius: 20px;
+            }
+        }
+        .about__item{
+            width: 100%;
+            h3{
+                color: #13C5DD;
+                font-family: Ubuntu;
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+            }
+            h2{
+                font-family: Roboto Slab;
+                font-size: 2.4rem;
+                color: #1D2A4D;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-family: Karla;
+                font-size: 0.9rem;
+                margin-bottom: 2rem;
+                color: #848E9F;
+            }
+            .about__icon__content{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2rem;
+                .about__icon__item{
+                    background-color: #EFF5F9;
+                    padding: 1.5rem 2rem;
+                    border-radius: 100%;
+                    text-align: center;
+                    color: #13C5DD;
+                    i{
+                        font-size: 2.4rem;
+                        margin-bottom: 0.5rem;
+                    }
+                    h4{
+                        font-family: Ubuntu;
+                        font-size: 0.8rem;
+                        color: black;
+                    }
+                    b{
+                        font-family: Roboto Slab;
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// services
+.services{
+    width: 100%;
+    padding: 4.8rem 0;
+    .services__title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+        h3{
+            color: #13C5DD;
+            font-family: Ubuntu;
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size: 3rem;
+            font-family: Roboto Slab;
+            color: #1D2A4D;
+        }
+    }
+    .services__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        .services__item{
+            text-align: center;
+            width: 100%;
+            background-color: #EFF5F9;
+            padding: 2rem 2rem;
+            border-radius: 20px;
+            cursor: pointer;
+            .services__icon{
+                width: 110px;
+                height: 120px;
+                border-radius: 50%;
+                background-color: #13C5DD;
+                text-align: center;
+                padding: 1rem 1rem;
+                margin-bottom: 1rem;
+                i{
+                    font-size: 2.2rem;
+                    color: white;
+                    margin-top: 1.5rem;
+                }
+            }
+            h2{
+                font-family: Ubuntu;
+                font-size: 1.3rem;
+                margin-bottom: 0.5rem;
+            }
+            p{
+                font-family: Karla;
+                color: #848E9F;
+                font-size: 0.8rem;
+            }
+        }
+
+    }
+}
+.pricing{
+    width: 100%;
+    background-color: #13C5DD;
+    padding: 4.8rem 0;
+    .pricing__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        .pricing__item{
+            width: 100%;
+            h3{
+                font-family: Ubuntu;
+                color: white;
+                margin-bottom: 1rem;
+                font-size: 1.5rem;
+            }
+            h1{
+                font-size: 2.8rem;
+                font-family: Roboto Slab;
+                color: #1D2A4D;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-family: Karla;
+                margin-bottom: 4rem;
+                color: #848E9F;
+            }
+            .pricing__button{
+                button{
+                    padding: 1.2rem 2.8rem;
+                    border-radius: 50px;
+                    cursor: pointer;
+                }
+                .pricing__find{
+                    color: white;
+                    background-color: #1D2A4D;
+                    border: none;
+                }
+                .pricing__read{
+                   background-color: #13C5DD;
+                   color: #1D2A4D;
+                   border: 1px solid #1D2A4D; 
+                   margin-left: 2rem;
+                   &:hover{
+                    background-color: #1D2A4D;
+                    color: white;
+                    transition: 0.5s;
+                   }
+                }
+            }
+        }
+        .pricing__registr{
+            width: 100%;
+            padding: 3rem 3rem;
+            background-color: white;
+            border-radius: 20px;
+            text-align: center;
+            h2{
+                text-align: center;
+                font-family: Ubuntu;
+                color: #1D2A4D;
+                font-size: 2rem;
+                margin-bottom: 1.6rem;
+            }
+            .registr__content{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                margin-bottom: 3rem;
+                input{
+                    padding: 1rem 1rem;
+                    border-radius: 10px;
+                    background-color: #EFF5F9;
+                    border: none;
+                    width: 100%;
+                }
+            }
+            button{
+                text-align: center;
+                padding: 1rem 2rem;
+                width: 100%;
+                border-radius: 10px;
+                background-color: #13C5DD;
+                border: none;
+                color: white;
+                font-size: 1.1rem;
+                cursor: pointer;
+                &:hover{
+                    background-color: #00afc6;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+// pages
+.pages{
+    width: 100%;
+    padding: 4.8rem 0;
+    .pages__title{
+        width: 100%;
+        margin-bottom: 3rem;
+        text-align: center;
+        h3{
+            font-family: Ubuntu;
+            font-size: 1.2rem;
+            color: #00afc6;
+        }
+        h1{
+            font-family: Roboto Slab;
+            color: #1D2A4D;
+            font-size: 2.8rem;
+        }
+    }
+    .pages__content{
+        width: 100%;
+        background-color: #00afc6;
+        padding: 1rem 1rem;
+        border-radius: 10px;
+        .swiper{
+            width: 100%;
+            .swiper-scrollbar{
+                display: none;
+            }
+            .swiper-wrapper{
+                width: 100%;
+                .swiper-slide{
+                    width: 100%;
+                    .slide__content{
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 3rem;
+                        .slide__item{
+                            border-radius: 15px;
+                            background-color: white;
+                            text-align: center;
+                            h3{
+                                font-family: Ubuntu;
+                            }
+                            h1{
+                                font-family: Roboto Slab;
+                                margin-bottom: 2rem;
+                                color: #13C5DD;
+                                small{
+                                    font-size: 22px;
+                                    line-height: 45px; 
+                                    color: black;
+                                }
+                                b{
+                                    font-size: 22px;
+                                    line-height: 45px;  
+                                    color: black; 
+                                }
+                            }
+                            p{
+                                width: 70%;
+                                font-family: Karla;
+                                margin-bottom: 3rem;
+                            }
+                            button{
+                                padding: 1rem 2rem;
+                                border-radius: 15px;
+                                background-color: #13C5DD;
+                                border: none;
+                                font-family: Ubuntu;
+                                color: white;
+                                font-size: 1.1rem;
+                            }
+                            .slide__img{
+                                img{
+                                    border-radius: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// find 
+.find{
+    width: 100%;
+    background-color: #13C5DD;
+    padding: 4.8rem 0;
+    .find__banner{
+        width: 100%;
+        .find__title{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 3rem;
+            h3{
+                color: white;
+                font-family: Ubuntu;
+            }
+            h1{
+                color: #1D2A4D;
+                font-family: Roboto Slab;
+                font-size: 3rem;
+                margin-bottom: 2rem;
+            }
+            p{
+                color: white;
+                font-size: 1.4rem;
+                width: 70%;
+                font-family: Karla;
+            }
+        }
+        .find__content{
+            width: 100%;
+            text-align: center;
+            .form-select{
+                padding: 1.4rem 2rem;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                cursor: pointer;
+                border: none;
+            }
+            input{
+                padding: 1.4rem 2rem;
+                border: 1px solid white;
+                width: 30%;
+            }
+            button{
+                padding: 1.4rem 2rem;
+                border: none;
+                background-color: #1D2A4D;
+                color: white;
+                font-family: Roboto Slab;
+                cursor: pointer;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+    }
+}
+// blog
+.blog{
+    width: 100%;
+    padding: 4.8rem 0;
+    .blog__title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+        h3{
+            font-size: 1.2rem;
+            font-family: Ubuntu;
+            color: #13C5DD;
+        }
+        h1{
+            font-family: Roboto Slab;
+            color: #1D2A4D;
+            font-size: 3.2rem;
+        }
+    }
+    .blog__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        align-items: center;
+        .blog__item{
+            width: 100%;
+            border-radius: 20px;
+            background-color: #EFF5F9;
+            padding: 1rem 1rem;
+            .blog__img{
+                width: 100%;
+                margin-bottom: 1rem;
+                img{
+                    width: 100%;
+                }
+            }
+            h2{
+                font-family: Roboto Slab;
+                margin-bottom: 0.5rem;
+                cursor: pointer;
+                &:hover{
+                    color: #13C5DD;
+                    transition: 0.5s;
+                }
+            }
+            p{
+                font-family: Karla;
+                color: #848E9F;
+                margin-bottom: 2.8rem;
+            }
+            .blog__icon__content{
+                border-top: 1px solid #cbcbcb;
+                padding: 0.9rem 0;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                text-align: center;
+                .john__content{
+                    width: 100%;
+                    h4{
+                        font-family: Ubuntu;
+                        font-size: 0.9rem;
+                        color: #13C5DD;
+                    }
+                    .john__img{
+                        width: 100%;
+                        img{
+                            border-radius: 100%;
+                            width: 20%;
+                        }
+                    }
+                }
+                .icon__content{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2 ,1fr);
+                    .icon__item{
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        i{
+                            color: #13C5DD;
+                        }
+                        h5{
+                            font-family: Ubuntu;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// footer
+.footer{
+    width: 100%;
+    background-color: #1D2A4D;
+    padding: 4.8rem 0;
+    .footer__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        .footer__item{
+            h2{
+                color: #13C5DD;
+                margin-bottom: 1rem;
+                font-family: Ubuntu;
+            }
+            p{
+                color: white;
+                font-family: Karla;
+                margin-bottom: 1rem;
+            } 
+            .icon__text{
+                i{
+                    color: #13C5DD;
+                    margin-right: 20px;
+                }
+            }
+            b{
+                display: block;
+                color: white;
+                margin-bottom: 10px;
+                font-family: Ubuntu;
+                cursor: pointer;
+                &:hover{
+                    color: #13C5DD;
+                    transition: 0.5s;
+                }
+            }
+            .input__content{
+                width: 100%;
+                input{
+                    padding: 1rem 1rem;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    border: none;
+                }
+                button{
+                    padding: 1rem 1rem;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                    background-color: #13C5DD;
+                    color: white;
+                    margin-bottom: 2rem;
+                }
+            }
+            .social__media{
+                width: 100%;
+                h3{
+                    font-family: Ubuntu;
+                    color: #13C5DD;
+                    margin-bottom: 1rem;
+                }
+                .social__content{
+                    width: 100%;
+                    display: flex;
+                    .social__item{
+                        background-color: #13C5DD;
+                        padding: 0.8rem 1rem;
+                        border-radius: 100%;
+                        color: white;
+                        cursor: pointer;
+                        i{
+                            font-size: 1.4rem;
+                        }
+                        &:hover{
+                            color: #1D2A4D;
+                            transition: 0.5s;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+// copyright
+.copyright{
+    width: 100%;
+    background-color: #1D2A4D;
+    .copyright__content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .copyright__item{
+            p{
+                color: white;
+                font-family: Karla;
+                a{
+                    color: #13C5DD;
+                    font-family: Ubuntu;
+                    text-decoration: none;
+                }
+                b{
+                    color: #13C5DD;
+                    font-family: Ubuntu;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
